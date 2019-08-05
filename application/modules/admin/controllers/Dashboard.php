@@ -20,10 +20,10 @@ class Dashboard extends CI_Controller
             $info['pageTitle'] = 'Admin Dashboard - Al Ain Holdings';
             
             // Templates
-            $this->load->view('common/header', $info);
-            $this->load->view('common/sidebar', $info);
+            $this->load->view('admin/common/header', $info);
+            $this->load->view('admin/common/sidebar', $info);
             $this->load->view('dashboard');
-            $this->load->view('common/footer');
+            $this->load->view('admin/common/footer');
         } catch (\Exception $e) {
             log_message('error', $e->getMessage());
         }

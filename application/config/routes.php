@@ -52,3 +52,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$adminpath='admin/';
+
+/*Routes related to admin starts here*/
+
+/*pages starts*/
+$route['admin/pages']=$adminpath.'Pages/index';
+$route['admin/addpage']=$adminpath.'Pages/add';
+$route['admin/viewpage/(:any)']=$adminpath.'Pages/viewpage';
+$route['admin/editpage/(:any)']=$adminpath.'Pages/editpage';
+$route['admin/deletepage/(:any)']=$adminpath.'Pages/deletepage';
+$route['admin/createpage/']=$adminpath.'Pages/create';
+$route['admin/updatepage']=$adminpath.'Pages/update';
+/*pages ends*/
+
+/*menu starts*/
+$route['admin/menuSetting']=$adminpath.'Menu/menuSettings';
+/*menu ends*/
+
+/*Routes related to admin ends here*/
