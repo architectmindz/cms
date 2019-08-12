@@ -7,7 +7,7 @@ class Pages extends CI_Controller{
         parent::__construct();
         
         if (! $this->session->userdata('loggedin')) {
-            redirect('admin/authorize/logout');
+            redirect('admin/logout');
         }
         
         $this->load->model('pages_model');

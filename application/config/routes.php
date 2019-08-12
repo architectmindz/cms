@@ -56,6 +56,8 @@ $adminpath='admin/';
 
 /*Routes related to admin starts here*/
 
+$route['admin/logout'] = $adminpath.'Authorize/logout';
+
 /*pages starts*/
 $route['admin/pages']=$adminpath.'Pages/index';
 $route['admin/addpage']=$adminpath.'Pages/add';
@@ -66,8 +68,13 @@ $route['admin/createpage/']=$adminpath.'Pages/create';
 $route['admin/updatepage']=$adminpath.'Pages/update';
 /*pages ends*/
 
+/* Admin Module - Media Routing - Starts */
+$route['admin/media'] = $adminpath.'Media/index';
+$route['admin/addmedia'] = $adminpath.'Media/add';
+/* Admin Module - Media Routing - Ends */
+
 /*menu starts*/
-$route['admin/menuSetting']=$adminpath.'Menu/menuSettings';
+$route['admin/menu']=$adminpath.'Menu/menuSettings';
 /*menu ends*/
 
 /*Routes related to admin ends here*/
